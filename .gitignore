@@ -1,0 +1,7 @@
+notas
+*.o
+*.out
+a.out
+
+.idea/
+.vscode/
