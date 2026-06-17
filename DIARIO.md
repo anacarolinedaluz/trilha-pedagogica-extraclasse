@@ -28,6 +28,20 @@
 - Escolha do tema e definição das funções do projeto;
 - Criação deste arquivo DIARIO.md.
 
-**Problemas e soluções:** —
-
 **Próximos passos:** Etapa 2: Implementar estrutura básica.
+
+---
+
+### Etapa 2: Implementação da estrutura básica (17/06/2026)
+
+**Objetivo:** criar as estruturas de dados e funções básicas do sistema.
+
+**Atividades realizadas:**
+- Definição de variáveis globais (matriz de notas, vetor de nomes, vetor de médias);
+- Menu interativo com do/while e switch;
+- Função de cadastro de nomes dos alunos;
+- Função de cadastro de notas dos alunos;
+- Função de exibição dos dados cadastrados;
+- Função de cálculo de médias individuais.
+
+**Próximos passos:** Etapa 3: Implementar boletim com situação (Aprovado / Recuperação / Reprovado).
