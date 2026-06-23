@@ -160,4 +160,4 @@ Percentual de aprovados: 33.33%
 Digite uma opcao: 7
 Saindo do programa...
 ```
-**Resultado:** a validação rejeitou a nota 15 e pediu novo valor; as três situações (Aprovado, Recuperação e Reprovado) foram exibidas corretamente; e as estatísticas conferem com o cálculo manual (média geral = (7,50 + 4,00 + 1, +50) / 3 = 4,33; 1 de 3 aprovados = 33,33%).
+**Resultado:** a validação rejeitou a nota 15 e pediu novo valor; as três situações (Aprovado, Recuperação e Reprovado) foram exibidas corretamente; e as estatísticas conferem com o cálculo manual (média geral = (7,50 + 4,00 + 1,50) / 3 = 4,33; 1 de 3 aprovados = 33,33%).
