@@ -83,23 +83,50 @@
 
 ---
 
-### Etapa 5: Revisão final, testes e consolidação (23/06/2026)
+### Etapa 5: Revisão final e testes (23/06/2026)
 
-**Objetivo:** revisar o código completo, executar testes em diferentes cenários e registrar as evidências de execução antes da entrega.
+**Objetivo:** revisar o código, testar o programa e guardar os prints antes da entrega.
 
 **Atividades realizadas:**
-- Compilação do programa sem erros nem avisos;
-- Execução de testes cobrindo os três casos de situação (Aprovado, Recuperação e Reprovado);
-- Teste da validação de notas inválidas (valor acima de 10), confirmando que o problema identificado na Etapa 3 foi resolvido;
-- Conferência manual dos cálculos de média individual, média geral da turma e percentual de aprovados.
+- Compilação do programa sem erros;
+- Testes com os três casos de situação (Aprovado, Recuperação e Reprovado);
+- Teste da validação de nota inválida (acima de 10), resolvendo o problema anotado na Etapa 3;
+- Conferência dos cálculos de média, média geral e percentual de aprovados.
 
-**Resultado:** todas as funcionalidades planejadas estão funcionando corretamente. O trabalho está pronto para entrega.
+**Resultado:** deu tudo certo, o programa está funcionando.
+
+---
+
+## Trechos de código
+
+Função que calcula a média de um aluno. Ela recebe o vetor de notas e a quantidade de avaliações e devolve a média:
+
+```c
+float calcularMedia(float notas[], int qtd) {
+    float soma = 0;
+    int i;
+    for (i = 0; i < qtd; i++) {
+        soma = soma + notas[i];
+    }
+    return soma / qtd;
+}
+```
+
+Parte que valida a nota com while, pra não deixar cadastrar um valor fora de 0 a 10:
+
+```c
+scanf("%f", &notasDosAlunos[i][j]);
+while (notasDosAlunos[i][j] < 0 || notasDosAlunos[i][j] > 10) {
+    printf("Nota invalida! Digite um valor entre 0 e 10: ");
+    scanf("%f", &notasDosAlunos[i][j]);
+}
+```
 
 ---
 
 ## Testes
 
-3 alunos, 2 avaliações. A nota 15 (inválida) foi digitada de propósito para testar a validação.
+3 alunos, 2 avaliações. A nota 15 foi digitada de propósito para testar a validação.
 
 ```
 === SISTEMA DE NOTAS ===
@@ -160,4 +187,21 @@ Percentual de aprovados: 33.33%
 Digite uma opcao: 7
 Saindo do programa...
 ```
-**Resultado:** a validação rejeitou a nota 15 e pediu novo valor; as três situações (Aprovado, Recuperação e Reprovado) foram exibidas corretamente; e as estatísticas conferem com o cálculo manual (média geral = (7,50 + 4,00 + 1,50) / 3 = 4,33; 1 de 3 aprovados = 33,33%).
+
+**Prints da execução:**
+
+Cadastro dos alunos e das notas:
+
+![Cadastro dos alunos e das notas](cadastros.png)
+
+Dados cadastrados:
+
+![Dados cadastrados](dados.png)
+
+Médias e boletim com a situação de cada aluno:
+
+![Médias e boletim](medias_e_boletim.png)
+
+Estatísticas da turma:
+
+![Estatísticas da turma](estatisticas.png)
